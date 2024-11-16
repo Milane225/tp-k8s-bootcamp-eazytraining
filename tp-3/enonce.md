@@ -39,10 +39,18 @@ kubectl get svc -n production
 
 ## 3- Suppression des pods, service nodeport et du namespace
 ### a- Suppression du pod simpe-webapp-color-blue
-````kubectl delete -n production -f pod-blue.yml````
+````
+kubectl delete -n production -f pod-blue.yml
+````
 ### b- Suppression du pod simpe-webapp-color-red
-````kubectl delete -n production -f pod-red.yml````
+````
+kubectl delete -n production -f pod-red.yml
+````
 ### c- Suppression du service nodeport
-````kubectl delete -n production -f service-nodeport-web.yml````
+````
+kubectl delete -n production -f service-nodeport-web.yml
+````
 ### d- Suppression du namespace
-````kubectl delete -f namespace.yml````
+````
+kubectl delete -f namespace.yml
+````
