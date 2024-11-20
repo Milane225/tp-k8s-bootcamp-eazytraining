@@ -4,9 +4,12 @@ VOLUME
 ````
 kubectl apply -f mysql-volume.yml
 ````
+````
 kubectl get po -o wide
 ````
+````
 kubectl port-forward mysql-volume 3306:3306 --address 0.0.0.0
+````
 ````
 APPLY VOLUME
 ````
