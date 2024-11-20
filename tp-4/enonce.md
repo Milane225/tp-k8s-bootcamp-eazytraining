@@ -45,7 +45,7 @@ kubectl apply -f pvc.yml
 kubectl get pvc pvc -o wide
 ````
 ````
-kubectl describe  pv pv
+kubectl describe  pvc pvc
 ````
 APPLY PV AND PVC
 ````
