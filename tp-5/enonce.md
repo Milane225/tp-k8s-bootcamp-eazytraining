@@ -26,7 +26,7 @@ sudo yum install openssl
 ./get_helm.sh
 ````
 
-### Verifions la version de helm
+### ==> Verifions la version de helm
 ````
 helm version
 ````
