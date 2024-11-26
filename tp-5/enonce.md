@@ -5,7 +5,7 @@
 https://devopscube.com/install-configure-helm-kubernetes/
 ````
 
-## Installation
+## 1- Installation
 
 ### ==> Recuperation du script d'installation
 ````
@@ -21,7 +21,7 @@ chmod 700 get_helm.sh
 sudo yum install openssl
 ````
 
-### Telechargeons helm
+### ==> Telechargeons helm
 ````
 ./get_helm.sh
 ````
@@ -30,7 +30,7 @@ sudo yum install openssl
 ````
 helm version
 ````
-## ################################ Déploiement WordPress ################################
+## 2- Déploiement WordPress
 
 ### Lien utile
 ````
