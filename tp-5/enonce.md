@@ -21,24 +21,33 @@ chmod 700 get_helm.sh
 sudo yum install openssl
 ````
 
-telechargeons helm
-
+### Telechargeons helm
+````
 ./get_helm.sh
-verifions la version
+````
 
+### Verifions la version de helm
+````
 helm version
-################################ Déploiement WordPress ################################
+````
+## ################################ Déploiement WordPress ################################
 
-Lien utile
-
+### Lien utile
+````
 https://devopscube.com/install-configure-helm-kubernetes/
-recuperation des charts fournit par bitnami
+````
 
+### Recuperation des charts fournit par bitnami
+````
 helm repo add bitnami https://charts.bitnami.com/bitnami
-redefinition des valeurs de deploiement de notre wordpress https://github.com/bitnami/charts/blob/main/bitnami/wordpress/values.yaml
+````
 
+### Redefinition des valeurs de deploiement de notre wordpress https://github.com/bitnami/charts/blob/main/bitnami/wordpress/values.yaml
+````
 vi values.yml
-ajouter du contenu suivant
+````
+
+### Ajouter du contenu suivant
 
 wordpressUsername: admin
 wordpressPassword: password
@@ -52,9 +61,13 @@ mariadb:
   primary:
     persistence:
       enabled: false
-Lancons le déploiement
 
+### Lançons le déploiement
+````
 helm install wordpress bitnami/wordpress -f values.yml
-Nettoyer l'environnement
+````
 
+### Nettoyer l'environnement
+````
 helm uninstall wordpress
+````
