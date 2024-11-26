@@ -32,22 +32,22 @@ helm version
 ````
 ## 2- Déploiement WordPress
 
-### Lien utile
+### ==> Lien utile
 ````
 https://devopscube.com/install-configure-helm-kubernetes/
 ````
 
-### Recuperation des charts fournit par bitnami
+### ==> Recuperation des charts fournit par bitnami
 ````
 helm repo add bitnami https://charts.bitnami.com/bitnami
 ````
 
-### Redefinition des valeurs de deploiement de notre wordpress https://github.com/bitnami/charts/blob/main/bitnami/wordpress/values.yaml
+### ==> Redefinition des valeurs de deploiement de notre wordpress https://github.com/bitnami/charts/blob/main/bitnami/wordpress/values.yaml
 ````
 vi values.yml
 ````
 
-### Ajouter du contenu suivant
+### ==> Ajouter du contenu suivant
 
 wordpressUsername: admin
 wordpressPassword: password
@@ -62,12 +62,12 @@ mariadb:
     persistence:
       enabled: false
 
-### Lançons le déploiement
+### ==> Lançons le déploiement
 ````
 helm install wordpress bitnami/wordpress -f values.yml
 ````
 
-### Nettoyer l'environnement
+### ==> Nettoyer l'environnement
 ````
 helm uninstall wordpress
 ````
