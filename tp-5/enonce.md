@@ -49,6 +49,7 @@ vi values.yml
 
 ### ==> Ajouter du contenu suivant
 
+````
 wordpressUsername: admin
 wordpressPassword: password
 service:
@@ -61,6 +62,7 @@ mariadb:
   primary:
     persistence:
       enabled: false
+````
 
 ### ==> Lançons le déploiement
 ````
